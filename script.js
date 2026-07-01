@@ -146,7 +146,7 @@
 
   const TIMELINE = [
     {
-      year: "Final year",
+      year: "2026",
       title: "BCA Hons. — Mobile Application &amp; Web Technology",
       place: "Quantum University, Roorkee, Uttarakhand",
       note: "Specializing in front-end development and UI design.",
