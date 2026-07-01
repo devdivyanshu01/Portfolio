@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divyanshu — UI Designer & Front-end Developer</title>
+  <meta name="description" content="Portfolio of Divyanshu, a front-end developer and UI designer. Projects include a Gemini API chatbot and a weather app." />
+
+  <!-- Fonts: preconnect for speed, font-display swap to avoid blocking render -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient neon field — fixed glow blobs, slowly drifting -->
+  <div class="ambient" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">
+        <span class="logo-dot"></span>
+        divyanshu
+      </a>
+      <nav class="nav-links">
+        <a href="#work"><span class="nav-dot"></span>Work</a>
+        <a href="#skills"><span class="nav-dot"></span>Skills</a>
+        <a href="#education"><span class="nav-dot"></span>Education</a>
+        <a href="#contact"><span class="nav-dot"></span>Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-ghost btn-small">Let's talk</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy fade-up">
+        <p class="eyebrow"><span class="eyebrow-line"></span>UI Designer &amp; Front-end Developer</p>
+        <h1 class="hero-title">
+          Hi, I'm Divyanshu —
+          <br />
+          <span class="gradient-text">I build for the web.</span>
+        </h1>
+        <p class="hero-sub">
+          A passionate front-end developer and UI designer who loves
+          creating attractive, responsive and functional web applications. This is my
+          simple, dependency-free HTML/CSS/JS portfolio.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">
+            View my work
+            <svg viewBox="0 0 24 24" class="icon-sm"><path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="terminal fade-up fade-up-delay">
+        <div class="terminal-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-path">divyanshu@portfolio: ~</span>
+        </div>
+        <div class="terminal-body" id="terminal-body" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span>Selected Work</p>
+        <h2 class="section-title">Two builds worth a closer look</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal" style="--accent:#00F0FF;">
+          <div class="window-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="window-path">gemini-chatbot — main.js</span>
+          </div>
+
+          <div class="project-preview">
+            <!-- Mock chat UI preview, no external image needed -->
+            <div class="chat-mock">
+              <div class="bubble bubble-in">What's the weather doing to my mood today?</div>
+              <div class="bubble bubble-out">Sunny, 24°C — perfect for a walk and a productive afternoon ✨</div>
+              <div class="typing-dots"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Chatbot</h3>
+              <svg viewBox="0 0 24 24" class="icon-md project-icon"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="project-desc">
+              Gemini API based chatbot created with React. It can answer questions, provide information, and engage in conversation.
+            </p>
+            <div class="tag-row">
+              <span class="tag">React</span>
+              <span class="tag">Gemini API</span>
+              <span class="tag">Tailwind</span>
+            </div>
+            <a class="project-link" href="https://twam-matram-bhosdayam.vercel.app/" target="_blank" rel="noopener noreferrer">
+              Visit project
+              <svg viewBox="0 0 24 24" class="icon-sm"><path d="M7 17L17 7M7 7h10v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" style="--accent:#FF2EE0;">
+          <div class="window-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="window-path">weather-app — index.js</span>
+          </div>
+
+          <div class="project-preview">
+            <!-- Mock weather widget preview -->
+            <div class="weather-mock">
+              <div>
+                <div class="weather-loc">Meerut, IN</div>
+                <div class="weather-temp">31°</div>
+                <div class="weather-cond">Partly cloudy</div>
+              </div>
+              <svg viewBox="0 0 24 24" class="icon-lg weather-icon"><path d="M17.5 19a4.5 4.5 0 000-9 6 6 0 00-11.4 1.6A4 4 0 007 19h10.5z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="7" cy="7" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Weather App</h3>
+              <svg viewBox="0 0 24 24" class="icon-md project-icon"><path d="M17.5 19a4.5 4.5 0 000-9 6 6 0 00-11.4 1.6A4 4 0 007 19h10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="project-desc">
+              A simple API based weather app created with React.
+            </p>
+            <div class="tag-row">
+              <span class="tag">React</span>
+              <span class="tag">Weather API</span>
+              <span class="tag">CSS</span>
+            </div>
+            <a class="project-link" href="https://weather-theta-ten.vercel.app/" target="_blank" rel="noopener noreferrer">
+              Visit project
+              <svg viewBox="0 0 24 24" class="icon-sm"><path d="M7 17L17 7M7 7h10v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS (lazy-loaded: markup is fetched on demand, see script.js) -->
+    <section id="skills" class="section">
+      <div class="reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span>Stack</p>
+        <h2 class="section-title">What I build with</h2>
+      </div>
+      <div id="skills-mount" class="lazy-mount" data-lazy-section="skills">
+        <div class="lazy-placeholder">Loading skills…</div>
+      </div>
+    </section>
+
+    <!-- EDUCATION (lazy-loaded) -->
+    <section id="education" class="section">
+      <div class="reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span>Background</p>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div id="education-mount" class="lazy-mount" data-lazy-section="education">
+        <div class="lazy-placeholder">Loading education…</div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="contact-card reveal">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="contact-inner">
+          <p class="eyebrow eyebrow-center"><span class="eyebrow-line"></span>Contact</p>
+          <h2 class="section-title center">Let's build something<br />worth shipping.</h2>
+          <p class="contact-sub">
+            Open to front-end and UI design roles, freelance builds, and
+            collaboration. Send a message and I'll get back to you.
+          </p>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="What are you building?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <svg viewBox="0 0 24 24" class="icon-sm"><path d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Submit
+            </button>
+          </form>
+
+          <p id="contact-confirm" class="contact-confirm" hidden></p>
+
+          <div class="social-row">
+            <a class="btn btn-ghost" href="https://github.com/devdivyanshu01" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" class="icon-sm"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03a9.6 9.6 0 015 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z" fill="currentColor"/></svg>
+              GitHub
+            </a>
+            <a class="btn btn-ghost" href="https://linkedin.com/in/devdivyanshu01" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" class="icon-sm"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 8.98h4v12.04H3V8.98zM9.5 8.98h3.83v1.64h.05c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.14v6.32h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.7h-4V8.98z" fill="currentColor"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Divyanshu</span>
+    <span class="footer-tag">
+      <svg viewBox="0 0 24 24" class="icon-sm"><path d="M4 17l6-6-6-6M12 19h8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      built with HTML, CSS &amp; JS
+    </span>
+  </footer>
+
+  <!-- Defer JS so it doesn't block first paint -->
+  <script src="script.js" defer></script>
+</body>
+</html>
