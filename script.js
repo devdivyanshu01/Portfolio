@@ -146,7 +146,7 @@
 
   const TIMELINE = [
     {
-      year: "2026",
+      year: "Final year",
       title: "BCA Hons. — Mobile Application &amp; Web Technology",
       place: "Quantum University, Roorkee, Uttarakhand",
       note: "Specializing in front-end development and UI design.",
@@ -261,7 +261,7 @@
   }
 
   /* ---------------------------------------------------------------------
-     Contact form — uses mailto to forward messages
+     Contact form (client-side demo only)
   --------------------------------------------------------------------- */
   function initContactForm() {
     const form = document.getElementById("contact-form");
@@ -272,19 +272,11 @@
       e.preventDefault();
       const name = form.name.value.trim();
       const email = form.email.value.trim();
-      const message = form.message.value.trim();
-      
-      if (!name || !email || !message) return;
+      if (!name || !email || !form.message.value.trim()) return;
 
-      // Create mailto link with pre-filled subject and body
-      const subject = encodeURIComponent(`New message from ${name}`);
-      const body = encodeURIComponent(`${message}`);
-      const mailtoLink = `mailto:divyanshudhiman51@gmail.com?subject=${subject}&body=${body}`;
-      
-      // Open mailto in new window and show confirmation
-      window.location.href = mailtoLink;
-      
-      confirm.textContent = `Thanks, ${name.split(" ")[0]} — opening your email client now. Your message will be forwarded to me!`;
+      // TODO: replace with a real submit — fetch() to your backend,
+      // a form service like Formspree, or a mailto: fallback.
+      confirm.textContent = `Thanks, ${name.split(" ")[0]} — your message is in. I'll reply at ${email} soon.`;
       confirm.hidden = false;
       form.hidden = true;
     });
