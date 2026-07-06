@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Divyanshu — NRI</title>
-  <meta name="description" content="Portfolio of Divyanshu, a front-end developer and UI designer. Projects include a Gemini API chatbot and a weather app." />
+  <meta name="description" content="Portfolio of Divyanshu, a front-end developer and UI designer. Projects include a Gemini API chatbot, a weather app, and NexusLingo, a neural translator." />
 
   <!-- Fonts: preconnect for speed, font-display swap to avoid blocking render -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -79,7 +79,7 @@
     <section id="work" class="section">
       <div class="reveal">
         <p class="eyebrow"><span class="eyebrow-line"></span>Selected Work</p>
-        <h2 class="section-title">Two builds worth a closer look</h2>
+        <h2 class="section-title">Three builds worth a closer look</h2>
       </div>
 
       <div class="project-grid">
@@ -165,30 +165,38 @@
             <span class="dot dot-red"></span>
             <span class="dot dot-yellow"></span>
             <span class="dot dot-green"></span>
-            <span class="window-path">gemini-chatbot — main.js</span>
+            <span class="window-path">nexus-translator — main.js</span>
           </div>
 
           <div class="project-preview">
-            <!-- Mock chat UI preview, no external image needed -->
-            <div class="chat-mock">
-              <div class="bubble bubble-in">What's the weather doing to my mood today?</div>
-              <div class="bubble bubble-out">Sunny, 24°C — perfect for a walk and a productive afternoon ✨</div>
-              <div class="typing-dots"><span></span><span></span><span></span></div>
+            <!-- Mock translator UI preview, no external image needed -->
+            <div class="translate-mock">
+              <div class="translate-box">
+                <div class="translate-lang">EN</div>
+                <div class="translate-text">Hello, how are you?</div>
+              </div>
+              <svg viewBox="0 0 24 24" class="translate-arrow"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="translate-box">
+                <div class="translate-lang">HI</div>
+                <div class="translate-text">नमस्ते, आप कैसे हैं?</div>
+              </div>
             </div>
           </div>
 
           <div class="project-body">
             <div class="project-head">
-              <h3>Translater</h3>
-              <svg viewBox="0 0 24 24" class="icon-md project-icon"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <h3>NexusLingo — Neural Translator</h3>
+              <svg viewBox="0 0 24 24" class="icon-md project-icon"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M9 2v3M13 21l4-11 4 11M14.5 17h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <p class="project-desc">
-              Gemini API based chatbot created with React. It can answer questions, provide information, and engage in conversation.
+              Multi-modal translation app supporting text, voice, and camera OCR input across multiple languages, with translation history and export.
             </p>
             <div class="tag-row">
               <span class="tag">HTML</span>
               <span class="tag">CSS</span>
               <span class="tag">JS</span>
+              <span class="tag">Speech API</span>
+              <span class="tag">OCR</span>
             </div>
             <a class="project-link" href="https://nexus-translater.vercel.app/" target="_blank" rel="noopener noreferrer">
               Visit project
