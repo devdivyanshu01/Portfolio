@@ -23,7 +23,7 @@
      Terminal typing intro
   --------------------------------------------------------------------- */
   const TYPED_LINES = [
-    { type: "cmd", text: "whoami" },
+    { type: "cmd", text: "who am i" },
     { type: "out", text: "divyanshu — ui designer / front-end dev" },
     { type: "cmd", text: "cat skills.json | grep react" },
     { type: "out", text: '{ "react": true, "figma": true, "coffee": "required" }' },
